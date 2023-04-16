@@ -51,10 +51,7 @@
         text-align: left;
     }
 
-    div:first-of-type input {
-    background-color: rgb(65, 75, 189);
-    color : white;
-  }
+    
 
   
   #invest-button {
@@ -113,406 +110,411 @@
         <br>
 
         <form>
-            <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
+          <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
             <label for="textbox1">법인명</label>
-            <input type="text" id="textbox1" name="textbox1">
-            <label for="textbox2">법인명</label>
-            <input type="text" id="textbox2" name="textbox2">
-            <label for="textbox3">법인명</label>
-            <input type="text" id="textbox3" name="textbox3">
-            <label for="textbox4">법인명</label>
-            <input type="text" id="textbox4" name="textbox4">
-            <label for="textbox5">법인명</label>
-            <input type="text" id="textbox5" name="textbox5">
-            <label for="textbox6">법인명</label>
-            <input type="text" id="textbox6" name="textbox6">
-            <label for="textbox7">법인명</label>
-            <input type="text" id="textbox7" name="textbox7">
-            <label for="textbox8">법인명</label>
-            <input type="text" id="textbox8" name="textbox8">
-            <label for="textbox9">법인명</label>
-            <input type="text" id="textbox9" name="textbox9">
-            <label for="textbox10">법인명</label>
-            <input type="text" id="textbox10" name="textbox10">
-        </div>
-        <br>
-
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
+            <input type="text" id="textbox1" name="textbox1" style="background-color: rgb(65, 75, 189); color: white;">
             <label for="capital1">자본금</label>
-            <input type="text" id="capital1" name="capital1" readonly>
-            <label for="capital2">자본금</label>
-            <input type="text" id="capital2" name="capital2" readonly>
-            <label for="capital3">자본금</label>
-            <input type="text" id="capital3" name="capital3" readonly>
-            <label for="capital4">자본금</label>
-            <input type="text" id="capital4" name="capital4" readonly>
-            <label for="capital5">자본금</label>
-            <input type="text" id="capital5" name="capital5" readonly>
-            <label for="capital6">자본금</label>
-            <input type="text" id="capital6" name="capital6" readonly>
-            <label for="capital7">자본금</label>
-            <input type="text" id="capital7" name="capital7" readonly>
-            <label for="capital8">자본금</label>
-            <input type="text" id="capital8" name="capital8" readonly>
-            <label for="capital9">자본금</label>
-            <input type="text" id="capital9" name="capital9" readonly>
-            <label for="capital10">자본금</label>
-            <input type="text" id="capital10" name="capital10" readonly>
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
+            <input type="text" id="capital1" name="capital1"  readonly>
             <label for="sum1">투자합계</label>
             <input type="text" id="sum1" name="sum1" value = "0" readonly>
+            <label for="text1a">A기업</label>
+            <input type="text" id="text1a" name="text1a"value = "0" oninput="add1()">
+            <label for="text1b">B기업</label>
+            <input type="text" id="text1b" name="text1b"value = "0" oninput="add1()">
+            <label for="text1c">C기업</label>
+            <input type="text" id="text1c" name="text1c"value = "0" oninput="add1()">
+            <label for="text1d">D기업</label>
+            <input type="text" id="text1d" name="text1d"value = "0" oninput="add1()">
+            <label for="text1e">E기업</label>
+            <input type="text" id="text1e" name="text1e"value = "0" oninput="add1()">
+            <label for="text1f">F기업</label>
+            <input type="text" id="text1f" name="text1f"value = "0" oninput="add1()">
+            <label for="text1g">G기업</label>
+            <input type="text" id="text1g" name="text1g"value = "0" oninput="add1()">
+            <label for="text1h">H기업</label>
+            <input type="text" id="text1h" name="text1h"value = "0" oninput="add1()">
+            <label for="text1i">I기업</label>
+            <input type="text" id="text1i" name="text1i"value = "0" oninput="add1()">
+            <label for="text1j">J기업</label>
+            <input type="text" id="text1j" name="text1j"value = "0" oninput="add1()">
+            <label for="text1k">K기업</label>
+            <input type="text" id="text1k" name="text1k"value = "0" oninput="add1()">
+            <label for="text1l">L기업</label>
+            <input type="text" id="text1l" name="text1l"value = "0" oninput="add1()">
+            <label for="text1x">투자X</label>
+            <input type="text" id="text1x" name="text1x"value = "0" oninput="add1()">
+
+            
+            
+            
+        </div>
+        <br>
+
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
+            
+            <label for="textbox2">법인명</label>
+            <input type="text" id="textbox2" name="textbox2" style="background-color: rgb(65, 75, 189); color: white;">
+            <label for="capital2">자본금</label>
+            <input type="text" id="capital2" name="capital2"  readonly>
             <label for="sum2">투자합계</label>
             <input type="text" id="sum2" name="sum2" value = "0" readonly>
+            <label for="text2a">A기업</label>
+            <input type="text" id="text2a" name="text2a" value = "0" oninput="add2()">
+            <label for="text2b">B기업</label>
+            <input type="text" id="text2b" name="text2b" value = "0" oninput="add2()">
+            <label for="text2c">C기업</label>
+            <input type="text" id="text2c" name="text2c" value = "0" oninput="add2()">
+            <label for="text2d">D기업</label>
+            <input type="text" id="text2d" name="text2d" value = "0" oninput="add2()">
+            <label for="text2e">E기업</label>
+            <input type="text" id="text2e" name="text2e" value = "0" oninput="add2()">
+            <label for="text2f">F기업</label>
+            <input type="text" id="text2f" name="text2f" value = "0" oninput="add2()">
+            <label for="text2g">G기업</label>
+            <input type="text" id="text2g" name="text2g" value = "0" oninput="add2()">
+            <label for="text2h">H기업</label>
+            <input type="text" id="text2h" name="text2h" value = "0" oninput="add2()">
+            <label for="text2i">I기업</label>
+            <input type="text" id="text2i" name="text2i" value = "0" oninput="add2()">
+            <label for="text2j">J기업</label>
+            <input type="text" id="text2j" name="text2j" value = "0" oninput="add2()">
+            <label for="text2k">K기업</label>
+            <input type="text" id="text2k" name="text2k" value = "0" oninput="add2()">
+            <label for="text2l">L기업</label>
+            <input type="text" id="text2l" name="text2l" value = "0" oninput="add2()">
+            <label for="text2x">투자X</label>
+            <input type="text" id="text2x" name="text2x" value = "0" oninput="add2()">
+            
+            
+            
+        </div>
+        <br>
+
+        
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
+            
+            
+            <label for="textbox3">법인명</label>
+            <input type="text" id="textbox3" name="textbox3" style="background-color: rgb(65, 75, 189); color: white;">
+            <label for="capital3">자본금</label>
+            <input type="text" id="capital3" name="capital3"  readonly>
             <label for="sum3">투자합계</label>
             <input type="text" id="sum3" name="sum3" value = "0" readonly>
-            <label for="sum4">투자합계</label>
-            <input type="text" id="sum4" name="sum4" value = "0" readonly>
-            <label for="sum5">투자합계</label>
+            <label for="text3a">A기업</label>
+            <input type="text" id="text3a" name="text3a" value = "0" oninput="add3()">
+            <label for="text3b">B기업</label>
+            <input type="text" id="text3b" name="text3b" value = "0" oninput="add3()">
+            <label for="text3c">C기업</label>
+            <input type="text" id="text3c" name="text3c" value = "0" oninput="add3()">
+            <label for="text3d">D기업</label>
+            <input type="text" id="text3d" name="text3d" value = "0" oninput="add3()">
+            <label for="text3e">E기업</label>
+            <input type="text" id="text3e" name="text3e" value = "0" oninput="add3()">
+            <label for="text3f">F기업</label>
+            <input type="text" id="text3f" name="text3f" value = "0" oninput="add3()">
+            <label for="text3g">G기업</label>
+            <input type="text" id="text3g" name="text3g" value = "0" oninput="add3()">
+            <label for="text3h">H기업</label>
+            <input type="text" id="text3h" name="text3h" value = "0" oninput="add3()">
+            <label for="text3i">I기업</label>
+            <input type="text" id="text3i" name="text3i" value = "0" oninput="add3()">
+            <label for="text3j">J기업</label>
+            <input type="text" id="text3j" name="text3j" value = "0" oninput="add3()">
+            <label for="text3k">K기업</label>
+            <input type="text" id="text3k" name="text3k" value = "0" oninput="add3()">
+            <label for="text3l">L기업</label>
+            <input type="text" id="text3l" name="text3l" value = "0" oninput="add3()">
+            <label for="text3x">투자X</label>
+            <input type="text" id="text3x" name="text3x" value = "0" oninput="add3()">
+            
+        </div>
+
+        <br>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
+            
+          <label for="textbox4">법인명</label>
+          <input type="text" id="textbox4" name="textbox4" style="background-color: rgb(65, 75, 189); color: white;">
+          <label for="capital4">자본금</label>
+          <input type="text" id="capital4" name="capital4"  readonly>
+          <label for="sum4">투자합계</label>
+          <input type="text" id="sum4" name="sum4" value = "0" readonly>
+          <label for="text4a">A기업</label>
+            <input type="text" id="text4a" name="text4a" value = "0" oninput="add4()">
+            <label for="text4b">B기업</label>
+            <input type="text" id="text4b" name="text4b" value = "0" oninput="add4()">
+            <label for="text4c">C기업</label>
+            <input type="text" id="text4c" name="text4c" value = "0" oninput="add4()">
+            <label for="text4d">D기업</label>
+            <input type="text" id="text4d" name="text4d" value = "0" oninput="add4()">
+            <label for="text4e">E기업</label>
+            <input type="text" id="text4e" name="text4e" value = "0" oninput="add4()">
+            <label for="text4f">F기업</label>
+            <input type="text" id="text4f" name="text4f" value = "0" oninput="add4()">
+            <label for="text4g">G기업</label>
+            <input type="text" id="text4g" name="text4g" value = "0" oninput="add4()">
+            <label for="text4h">H기업</label>
+            <input type="text" id="text4h" name="text4h" value = "0" oninput="add4()">
+            <label for="text4i">I기업</label>
+            <input type="text" id="text4i" name="text4i" value = "0" oninput="add4()">
+            <label for="text4j">J기업</label>
+            <input type="text" id="text4j" name="text4j" value = "0" oninput="add4()">
+            <label for="text4k">K기업</label>
+            <input type="text" id="text4k" name="text4k" value = "0" oninput="add4()">
+            <label for="text4l">L기업</label>
+            <input type="text" id="text4l" name="text4l" value = "0" oninput="add4()">
+            <label for="text4x">투자X</label>
+            <input type="text" id="text4x" name="text4x" value = "0" oninput="add4()">
+
+
+          
+        </div>
+
+        <br>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
+            
+          <label for="textbox5">법인명</label>
+          <input type="text" id="textbox5" name="textbox5" style="background-color: rgb(65, 75, 189); color: white;">
+          <label for="capital5">자본금</label>
+          <input type="text" id="capital5" name="capital5"  readonly>
+          <label for="sum5">투자합계</label>
             <input type="text" id="sum5" name="sum5" value = "0" readonly>
-            <label for="sum6">투자합계</label>
-            <input type="text" id="sum6" name="sum6" value = "0" readonly>
-            <label for="sum">투자합계</label>
-            <input type="text" id="sum7" name="sum7" value = "0" readonly>
-            <label for="sum8">투자합계</label>
-            <input type="text" id="sum8" name="sum8" value = "0" readonly>
-            <label for="sum9">투자합계</label>
-            <input type="text" id="sum9" name="sum9" value = "0" readonly>
-            <label for="sum10">투자합계</label>
-            <input type="text" id="sum10" name="sum10" value = "0" readonly>
+            <label for="text5a">A기업</label>
+            <input type="text" id="text5a" name="text5a" value = "0" oninput="add5()">
+            <label for="text5b">B기업</label>
+            <input type="text" id="text5b" name="text5b" value = "0" oninput="add5()">
+            <label for="text5c">C기업</label>
+            <input type="text" id="text5c" name="text5c" value = "0" oninput="add5()">
+            <label for="text5d">D기업</label>
+            <input type="text" id="text5d" name="text5d" value = "0" oninput="add5()">
+            <label for="text5e">E기업</label>
+            <input type="text" id="text5e" name="text5e" value = "0" oninput="add5()">
+            <label for="text5f">F기업</label>
+            <input type="text" id="text5f" name="text5f" value = "0" oninput="add5()">
+            <label for="text5g">G기업</label>
+            <input type="text" id="text5g" name="text5g" value = "0" oninput="add5()">
+            <label for="text5h">H기업</label>
+            <input type="text" id="text5h" name="text5h" value = "0" oninput="add5()">
+            <label for="text5i">I기업</label>
+            <input type="text" id="text5i" name="text5i" value = "0" oninput="add5()">
+            <label for="text5j">J기업</label>
+            <input type="text" id="text5j" name="text5j" value = "0" oninput="add5()">
+            <label for="text5k">K기업</label>
+            <input type="text" id="text5k" name="text5k" value = "0" oninput="add5()">
+            <label for="text5l">L기업</label>
+            <input type="text" id="text5l" name="text5l" value = "0" oninput="add5()">
+            <label for="text5x">투자X</label>
+            <input type="text" id="text5x" name="text5x" value = "0" oninput="add5()">  
+            
+            
+            
         </div>
 
         
+
         <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
-            <label for="text1a">A기업</label>
-            <input type="text" id="text1a" name="text1a"value = "0" oninput="add1()">
-            <label for="text2a">A기업</label>
-            <input type="text" id="text2a" name="text2a" value = "0" oninput="add2()">
-            <label for="text3a">A기업</label>
-            <input type="text" id="text3a" name="text3a" value = "0" oninput="add3()">
-            <label for="text4a">A기업</label>
-            <input type="text" id="text4a" name="text4a" value = "0" oninput="add4()">
-            <label for="text5a">A기업</label>
-            <input type="text" id="text5a" name="text5a" value = "0" oninput="add5()">
+            
+          <label for="textbox6">법인명</label>
+          <input type="text" id="textbox6" name="textbox6" style="background-color: rgb(65, 75, 189); color: white;">
+          <label for="capital6">자본금</label>
+          <input type="text" id="capital6" name="capital6"  readonly>
+          <label for="sum6">투자합계</label>
+            <input type="text" id="sum6" name="sum6" value = "0" readonly>
             <label for="text6a">A기업</label>
             <input type="text" id="text6a" name="text6a" value = "0" oninput="add6()">
-            <label for="text7a">A기업</label>
-            <input type="text" id="text7a" name="text7a" value = "0" oninput="add7()">
-            <label for="text8a">A기업</label>
-            <input type="text" id="text8a" name="text8a" value = "0" oninput="add8()">
-            <label for="text9a">A기업</label>
-            <input type="text" id="text9a" name="text9a" value = "0" oninput="add9()">
-            <label for="text10a">A기업</label>
-            <input type="text" id="text10a" name="text10a" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1b">B기업</label>
-            <input type="text" id="text1b" name="text1b"value = "0" oninput="add1()">
-            <label for="text2b">B기업</label>
-            <input type="text" id="text2b" name="text2b" value = "0" oninput="add3()">
-            <label for="text3b">B기업</label>
-            <input type="text" id="text3b" name="text3b" value = "0" oninput="add3()">
-            <label for="text4b">B기업</label>
-            <input type="text" id="text4b" name="text4b" value = "0" oninput="add4()">
-            <label for="text5b">B기업</label>
-            <input type="text" id="text5b" name="text5b" value = "0" oninput="add5()">
             <label for="text6b">B기업</label>
             <input type="text" id="text6b" name="text6b" value = "0" oninput="add6()">
-            <label for="text7b">B기업</label>
-            <input type="text" id="text7b" name="text7b" value = "0" oninput="add7()">
-            <label for="text8b">B기업</label>
-            <input type="text" id="text8b" name="text8b" value = "0" oninput="add8()">
-            <label for="text9b">B기업</label>
-            <input type="text" id="text9b" name="text9b" value = "0" oninput="add9()">
-            <label for="text10b">B기업</label>
-            <input type="text" id="text10b" name="text10b" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1c">C기업</label>
-            <input type="text" id="text1c" name="text1c"value = "0" oninput="add1()">
-            <label for="text2c">C기업</label>
-            <input type="text" id="text2c" name="text2c" value = "0" oninput="add2()">
-            <label for="text3c">C기업</label>
-            <input type="text" id="text3c" name="text3c" value = "0" oninput="add3()">
-            <label for="text4c">C기업</label>
-            <input type="text" id="text4c" name="text4c" value = "0" oninput="add4()">
-            <label for="text5c">C기업</label>
-            <input type="text" id="text5c" name="text5c" value = "0" oninput="add5()">
             <label for="text6c">C기업</label>
             <input type="text" id="text6c" name="text6c" value = "0" oninput="add6()">
-            <label for="text7c">C기업</label>
-            <input type="text" id="text7c" name="text7c" value = "0" oninput="add7()">
-            <label for="text8c">C기업</label>
-            <input type="text" id="text8c" name="text8c" value = "0" oninput="add8()">
-            <label for="text9c">C기업</label>
-            <input type="text" id="text9c" name="text9c" value = "0" oninput="add9()">
-            <label for="text10c">C기업</label>
-            <input type="text" id="text10c" name="text10c" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1d">D기업</label>
-            <input type="text" id="text1d" name="text1d"value = "0" oninput="add1()">
-            <label for="text2d">D기업</label>
-            <input type="text" id="text2d" name="text2d" value = "0" oninput="add2()">
-            <label for="text3d">D기업</label>
-            <input type="text" id="text3d" name="text3d" value = "0" oninput="add3()">
-            <label for="text4d">D기업</label>
-            <input type="text" id="text4d" name="text4d" value = "0" oninput="add4()">
-            <label for="text5d">D기업</label>
-            <input type="text" id="text5d" name="text5d" value = "0" oninput="add5()">
             <label for="text6d">D기업</label>
             <input type="text" id="text6d" name="text6d" value = "0" oninput="add6()">
-            <label for="text7d">D기업</label>
-            <input type="text" id="text7d" name="text7d" value = "0" oninput="add7()">
-            <label for="text8d">D기업</label>
-            <input type="text" id="text8d" name="text8d" value = "0" oninput="add8()">
-            <label for="text9d">D기업</label>
-            <input type="text" id="text9d" name="text9d" value = "0" oninput="add9()">
-            <label for="text10d">D기업</label>
-            <input type="text" id="text10d" name="text10d" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1e">E기업</label>
-            <input type="text" id="text1e" name="text1e"value = "0" oninput="add1()">
-            <label for="text2e">E기업</label>
-            <input type="text" id="text2e" name="text2e" value = "0" oninput="add2()">
-            <label for="text3e">E기업</label>
-            <input type="text" id="text3e" name="text3e" value = "0" oninput="add3()">
-            <label for="text4e">E기업</label>
-            <input type="text" id="text4e" name="text4e" value = "0" oninput="add4()">
-            <label for="text5e">E기업</label>
-            <input type="text" id="text5e" name="text5e" value = "0" oninput="add5()">
             <label for="text6e">E기업</label>
             <input type="text" id="text6e" name="text6e" value = "0" oninput="add6()">
-            <label for="text7e">E기업</label>
-            <input type="text" id="text7e" name="text7e" value = "0" oninput="add7()">
-            <label for="text8e">E기업</label>
-            <input type="text" id="text8e" name="text8e" value = "0" oninput="add8()">
-            <label for="text9e">E기업</label>
-            <input type="text" id="text9e" name="text9e" value = "0" oninput="add9()">
-            <label for="text10e">E기업</label>
-            <input type="text" id="text10e" name="text10e" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1f">F기업</label>
-            <input type="text" id="text1f" name="text1f"value = "0" oninput="add1()">
-            <label for="text2f">F기업</label>
-            <input type="text" id="text2f" name="text2f" value = "0" oninput="add2()">
-            <label for="text3f">F기업</label>
-            <input type="text" id="text3f" name="text3f" value = "0" oninput="add3()">
-            <label for="text4f">F기업</label>
-            <input type="text" id="text4f" name="text4f" value = "0" oninput="add4()">
-            <label for="text5f">F기업</label>
-            <input type="text" id="text5f" name="text5f" value = "0" oninput="add5()">
             <label for="text6f">F기업</label>
             <input type="text" id="text6f" name="text6f" value = "0" oninput="add6()">
-            <label for="text7f">F기업</label>
-            <input type="text" id="text7f" name="text7f" value = "0" oninput="add7()">
-            <label for="text8f">F기업</label>
-            <input type="text" id="text8f" name="text8f" value = "0" oninput="add8()">
-            <label for="text9f">F기업</label>
-            <input type="text" id="text9f" name="text9f" value = "0" oninput="add9()">
-            <label for="text10f">F기업</label>
-            <input type="text" id="text10f" name="text10f" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1g">G기업</label>
-            <input type="text" id="text1g" name="text1g"value = "0" oninput="add1()">
-            <label for="text2g">G기업</label>
-            <input type="text" id="text2g" name="text2g" value = "0" oninput="add2()">
-            <label for="text3g">G기업</label>
-            <input type="text" id="text3g" name="text3g" value = "0" oninput="add3()">
-            <label for="text4g">G기업</label>
-            <input type="text" id="text4g" name="text4g" value = "0" oninput="add4()">
-            <label for="text5g">G기업</label>
-            <input type="text" id="text5g" name="text5g" value = "0" oninput="add5()">
             <label for="text6g">G기업</label>
             <input type="text" id="text6g" name="text6g" value = "0" oninput="add6()">
-            <label for="text7g">G기업</label>
-            <input type="text" id="text7g" name="text7g" value = "0" oninput="add7()">
-            <label for="text8g">G기업</label>
-            <input type="text" id="text8g" name="text8g" value = "0" oninput="add8()">
-            <label for="text9g">G기업</label>
-            <input type="text" id="text9g" name="text9g" value = "0" oninput="add9()">
-            <label for="text10g">G기업</label>
-            <input type="text" id="text10g" name="text10g" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1h">H기업</label>
-            <input type="text" id="text1h" name="text1h"value = "0" oninput="add1()">
-            <label for="text2h">H기업</label>
-            <input type="text" id="text2h" name="text2h" value = "0" oninput="add2()">
-            <label for="text3h">H기업</label>
-            <input type="text" id="text3h" name="text3h" value = "0" oninput="add3()">
-            <label for="text4h">H기업</label>
-            <input type="text" id="text4h" name="text4h" value = "0" oninput="add4()">
-            <label for="text5h">H기업</label>
-            <input type="text" id="text5h" name="text5h" value = "0" oninput="add5()">
             <label for="text6h">H기업</label>
             <input type="text" id="text6h" name="text6h" value = "0" oninput="add6()">
-            <label for="text7h">H기업</label>
-            <input type="text" id="text7h" name="text7h" value = "0" oninput="add7()">
-            <label for="text8h">H기업</label>
-            <input type="text" id="text8h" name="text8h" value = "0" oninput="add8()">
-            <label for="text9h">H기업</label>
-            <input type="text" id="text9h" name="text9h" value = "0" oninput="add9()">
-            <label for="text10h">H기업</label>
-            <input type="text" id="text10h" name="text10h" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1i">I기업</label>
-            <input type="text" id="text1i" name="text1i"value = "0" oninput="add1()">
-            <label for="text2i">I기업</label>
-            <input type="text" id="text2i" name="text2i" value = "0" oninput="add2()">
-            <label for="text3i">I기업</label>
-            <input type="text" id="text3i" name="text3i" value = "0" oninput="add3()">
-            <label for="text4i">I기업</label>
-            <input type="text" id="text4i" name="text4i" value = "0" oninput="add4()">
-            <label for="text5i">I기업</label>
-            <input type="text" id="text5i" name="text5i" value = "0" oninput="add5()">
             <label for="text6i">I기업</label>
             <input type="text" id="text6i" name="text6i" value = "0" oninput="add6()">
-            <label for="text7i">I기업</label>
-            <input type="text" id="text7i" name="text7i" value = "0" oninput="add7()">
-            <label for="text8i">I기업</label>
-            <input type="text" id="text8i" name="text8i" value = "0" oninput="add8()">
-            <label for="text9i">I기업</label>
-            <input type="text" id="text9i" name="text9i" value = "0" oninput="add9()">
-            <label for="text10i">I기업</label>
-            <input type="text" id="text10i" name="text10i" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1j">J기업</label>
-            <input type="text" id="text1j" name="text1j"value = "0" oninput="add1()">
-            <label for="text2j">J기업</label>
-            <input type="text" id="text2j" name="text2j" value = "0" oninput="add2()">
-            <label for="text3j">J기업</label>
-            <input type="text" id="text3j" name="text3j" value = "0" oninput="add3()">
-            <label for="text4j">J기업</label>
-            <input type="text" id="text4j" name="text4j" value = "0" oninput="add4()">
-            <label for="text5j">J기업</label>
-            <input type="text" id="text5j" name="text5j" value = "0" oninput="add5()">
             <label for="text6j">J기업</label>
             <input type="text" id="text6j" name="text6j" value = "0" oninput="add6()">
-            <label for="text7j">J기업</label>
-            <input type="text" id="text7j" name="text7j" value = "0" oninput="add7()">
-            <label for="text8j">J기업</label>
-            <input type="text" id="text8j" name="text8j" value = "0" oninput="add8()">
-            <label for="text9j">J기업</label>
-            <input type="text" id="text9j" name="text9j" value = "0" oninput="add9()">
-            <label for="text10j">J기업</label>
-            <input type="text" id="text10j" name="text10j" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1k">K기업</label>
-            <input type="text" id="text1k" name="text1k"value = "0" oninput="add1()">
-            <label for="text2k">K기업</label>
-            <input type="text" id="text2k" name="text2k" value = "0" oninput="add2()">
-            <label for="text3k">K기업</label>
-            <input type="text" id="text3k" name="text3k" value = "0" oninput="add3()">
-            <label for="text4k">K기업</label>
-            <input type="text" id="text4k" name="text4k" value = "0" oninput="add4()">
-            <label for="text5k">K기업</label>
-            <input type="text" id="text5k" name="text5k" value = "0" oninput="add5()">
             <label for="text6k">K기업</label>
             <input type="text" id="text6k" name="text6k" value = "0" oninput="add6()">
-            <label for="text7k">K기업</label>
-            <input type="text" id="text7k" name="text7k" value = "0" oninput="add7()">
-            <label for="text8k">K기업</label>
-            <input type="text" id="text8k" name="text8k" value = "0" oninput="add8()">
-            <label for="text9k">K기업</label>
-            <input type="text" id="text9k" name="text9k" value = "0" oninput="add9()">
-            <label for="text10k">K기업</label>
-            <input type="text" id="text10k" name="text10k" value = "0" oninput="add10()">
-        </div>
-
-        <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-            
-            <label for="text1l">L기업</label>
-            <input type="text" id="text1l" name="text1l"value = "0" oninput="add1()">
-            <label for="text2l">L기업</label>
-            <input type="text" id="text2l" name="text2l" value = "0" oninput="add2()">
-            <label for="text3l">L기업</label>
-            <input type="text" id="text3l" name="text3l" value = "0" oninput="add3()">
-            <label for="text4l">L기업</label>
-            <input type="text" id="text4l" name="text4l" value = "0" oninput="add4()">
-            <label for="text5l">L기업</label>
-            <input type="text" id="text5l" name="text5l" value = "0" oninput="add5()">
             <label for="text6l">L기업</label>
             <input type="text" id="text6l" name="text6l" value = "0" oninput="add6()">
-            <label for="text7l">L기업</label>
-            <input type="text" id="text7l" name="text7l" value = "0" oninput="add7()">
-            <label for="text8l">L기업</label>
-            <input type="text" id="text8l" name="text8l" value = "0" oninput="add8()">
-            <label for="text9l">L기업</label>
-            <input type="text" id="text9l" name="text9l" value = "0" oninput="add9()">
-            <label for="text10l">L기업</label>
-            <input type="text" id="text10l" name="text10l" value = "0" oninput="add10()">
+            <label for="text6x">투자X</label>
+            <input type="text" id="text6x" name="text6x" value = "0" oninput="add6()">
+            
+            
         </div>
 
         <br>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
-            <label for="text1x">투자X</label>
-            <input type="text" id="text1x" name="text1x"value = "0" oninput="add1()">
-            <label for="text2x">투자X</label>
-            <input type="text" id="text2x" name="text2x" value = "0" oninput="add2()">
-            <label for="text3x">투자X</label>
-            <input type="text" id="text3x" name="text3x" value = "0" oninput="add3()">
-            <label for="text4x">투자X</label>
-            <input type="text" id="text4x" name="text4x" value = "0" oninput="add4()">
-            <label for="text5x">투자X</label>
-            <input type="text" id="text5x" name="text5x" value = "0" oninput="add5()">
-            <label for="text6x">투자X</label>
-            <input type="text" id="text6x" name="text6x" value = "0" oninput="add6()">
+            
+          <label for="textbox7">법인명</label>
+          <input type="text" id="textbox7" name="textbox7" style="background-color: rgb(65, 75, 189); color: white;">
+          <label for="capital7">자본금</label>
+          <input type="text" id="capital7" name="capital7"  readonly>
+          <label for="sum">투자합계</label>
+            <input type="text" id="sum7" name="sum7" value = "0" readonly>
+            <label for="text7a">A기업</label>
+            <input type="text" id="text7a" name="text7a" value = "0" oninput="add7()">
+            <label for="text7b">B기업</label>
+            <input type="text" id="text7b" name="text7b" value = "0" oninput="add7()">
+            <label for="text7c">C기업</label>
+            <input type="text" id="text7c" name="text7c" value = "0" oninput="add7()">
+            <label for="text7d">D기업</label>
+            <input type="text" id="text7d" name="text7d" value = "0" oninput="add7()">
+            <label for="text7e">E기업</label>
+            <input type="text" id="text7e" name="text7e" value = "0" oninput="add7()">
+            <label for="text7f">F기업</label>
+            <input type="text" id="text7f" name="text7f" value = "0" oninput="add7()">
+            <label for="text7g">G기업</label>
+            <input type="text" id="text7g" name="text7g" value = "0" oninput="add7()">
+            <label for="text7h">H기업</label>
+            <input type="text" id="text7h" name="text7h" value = "0" oninput="add7()">
+            <label for="text7i">I기업</label>
+            <input type="text" id="text7i" name="text7i" value = "0" oninput="add7()">
+            <label for="text7j">J기업</label>
+            <input type="text" id="text7j" name="text7j" value = "0" oninput="add7()">
+            <label for="text7k">K기업</label>
+            <input type="text" id="text7k" name="text7k" value = "0" oninput="add7()">
+            <label for="text7l">L기업</label>
+            <input type="text" id="text7l" name="text7l" value = "0" oninput="add7()">
             <label for="text7x">투자X</label>
             <input type="text" id="text7x" name="text7x" value = "0" oninput="add7()">
-            <label for="text8x">투자X</label>
-            <input type="text" id="text8x" name="text8x" value = "0" oninput="add8()">
-            <label for="text9x">투자X</label>
-            <input type="text" id="text9x" name="text9x" value = "0" oninput="add9()">
-            <label for="text10x">투자X</label>
-            <input type="text" id="text10x" name="text10x" value = "0" oninput="add10()">
+            
+            
         </div>
 
+        <br>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
+            
+            
+          <label for="textbox8">법인명</label>
+          <input type="text" id="textbox8" name="textbox8" style="background-color: rgb(65, 75, 189); color: white;">
+          <label for="capital8">자본금</label>
+          <input type="text" id="capital8" name="capital8"  readonly>
+          <label for="sum8">투자합계</label>
+            <input type="text" id="sum8" name="sum8" value = "0" readonly>
+            <label for="text8a">A기업</label>
+            <input type="text" id="text8a" name="text8a" value = "0" oninput="add8()">
+            <label for="text8b">B기업</label>
+            <input type="text" id="text8b" name="text8b" value = "0" oninput="add8()">
+            <label for="text8c">C기업</label>
+            <input type="text" id="text8c" name="text8c" value = "0" oninput="add8()">
+            <label for="text8d">D기업</label>
+            <input type="text" id="text8d" name="text8d" value = "0" oninput="add8()">
+            <label for="text8e">E기업</label>
+            <input type="text" id="text8e" name="text8e" value = "0" oninput="add8()">
+            <label for="text8f">F기업</label>
+            <input type="text" id="text8f" name="text8f" value = "0" oninput="add8()">
+            <label for="text8g">G기업</label>
+            <input type="text" id="text8g" name="text8g" value = "0" oninput="add8()">
+            <label for="text8h">H기업</label>
+            <input type="text" id="text8h" name="text8h" value = "0" oninput="add8()">
+            <label for="text8i">I기업</label>
+            <input type="text" id="text8i" name="text8i" value = "0" oninput="add8()">
+            <label for="text8j">J기업</label>
+            <input type="text" id="text8j" name="text8j" value = "0" oninput="add8()">
+            <label for="text8k">K기업</label>
+            <input type="text" id="text8k" name="text8k" value = "0" oninput="add8()">
+            <label for="text8l">L기업</label>
+            <input type="text" id="text8l" name="text8l" value = "0" oninput="add8()">
+            <label for="text8x">투자X</label>
+            <input type="text" id="text8x" name="text8x" value = "0" oninput="add8()">
+            
+            
+        </div>
+
+        <br>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
+            
+          <label for="textbox9">법인명</label>
+          <input type="text" id="textbox9" name="textbox9" style="background-color: rgb(65, 75, 189); color: white;">
+          <label for="capital9">자본금</label>
+          <input type="text" id="capital9" name="capital9"  readonly>
+          <label for="sum9">투자합계</label>
+            <input type="text" id="sum9" name="sum9" value = "0" readonly>
+            <label for="text9a">A기업</label>
+            <input type="text" id="text9a" name="text9a" value = "0" oninput="add9()">
+            <label for="text9b">B기업</label>
+            <input type="text" id="text9b" name="text9b" value = "0" oninput="add9()">
+            <label for="text9c">C기업</label>
+            <input type="text" id="text9c" name="text9c" value = "0" oninput="add9()">
+            <label for="text9d">D기업</label>
+            <input type="text" id="text9d" name="text9d" value = "0" oninput="add9()">
+            <label for="text9e">E기업</label>
+            <input type="text" id="text9e" name="text9e" value = "0" oninput="add9()">
+            <label for="text9f">F기업</label>
+            <input type="text" id="text9f" name="text9f" value = "0" oninput="add9()">
+            <label for="text9g">G기업</label>
+            <input type="text" id="text9g" name="text9g" value = "0" oninput="add9()">
+            <label for="text9h">H기업</label>
+            <input type="text" id="text9h" name="text9h" value = "0" oninput="add9()">
+            <label for="text9i">I기업</label>
+            <input type="text" id="text9i" name="text9i" value = "0" oninput="add9()">
+            <label for="text9j">J기업</label>
+            <input type="text" id="text9j" name="text9j" value = "0" oninput="add9()">
+            <label for="text9k">K기업</label>
+            <input type="text" id="text9k" name="text9k" value = "0" oninput="add9()">
+            <label for="text9l">L기업</label>
+            <input type="text" id="text9l" name="text9l" value = "0" oninput="add9()">
+            <label for="text9x">투자X</label>
+            <input type="text" id="text9x" name="text9x" value = "0" oninput="add9()">
+            
+            
+            
+        </div>
+
+        <br>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
+            
+          <label for="textbox10">법인명</label>
+          <input type="text" id="textbox10" name="textbox10" style="background-color: rgb(65, 75, 189); color: white;">           
+          <label for="capital10">자본금</label>
+          <input type="text" id="capital10" name="capital10"  readonly>          
+            <label for="sum10">투자합계</label>
+            <input type="text" id="sum10" name="sum10" value = "0" readonly>            
+            <label for="text10a">A기업</label>
+            <input type="text" id="text10a" name="text10a" value = "0" oninput="add10()">            
+            <label for="text10b">B기업</label>
+            <input type="text" id="text10b" name="text10b" value = "0" oninput="add10()">            
+            <label for="text10c">C기업</label>
+            <input type="text" id="text10c" name="text10c" value = "0" oninput="add10()">            
+            <label for="text10d">D기업</label>
+            <input type="text" id="text10d" name="text10d" value = "0" oninput="add10()">            
+            <label for="text10e">E기업</label>
+            <input type="text" id="text10e" name="text10e" value = "0" oninput="add10()">            
+            <label for="text10f">F기업</label>
+            <input type="text" id="text10f" name="text10f" value = "0" oninput="add10()">           
+            <label for="text10g">G기업</label>
+            <input type="text" id="text10g" name="text10g" value = "0" oninput="add10()">            
+            <label for="text10h">H기업</label>
+            <input type="text" id="text10h" name="text10h" value = "0" oninput="add10()">            
+            <label for="text10i">I기업</label>
+            <input type="text" id="text10i" name="text10i" value = "0" oninput="add10()">         
+            <label for="text10j">J기업</label>
+            <input type="text" id="text10j" name="text10j" value = "0" oninput="add10()">       
+            <label for="text10k">K기업</label>
+            <input type="text" id="text10k" name="text10k" value = "0" oninput="add10()">    
+            <label for="text10l">L기업</label>
+            <input type="text" id="text10l" name="text10l" value = "0" oninput="add10()">      
+            <label for="text10x">투자X</label>
+            <input type="text" id="text10x" name="text10x" value = "0" oninput="add10()">
+            
+            
+            
+        </div>
+      </div>
+
+      
         
         </form>
         <br>
