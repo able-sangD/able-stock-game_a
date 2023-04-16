@@ -323,35 +323,37 @@ document.getElementById("text10").value = Number(value10a) + Number(value10b) + 
                 // 변수에 저장된 값을 사용합니다.
                 alert("불러오기 완료");
                 }
-                function sortTextboxValues() {
-    // 배열 생성 및 초기화
-    var values = [];
-    for (var i = 1; i <= 10; i++) {
-      var textbox = document.getElementById('text' + i);
-      var label = document.getElementById('label' + i);
-      values.push({ value: textbox.value, label: label.innerHTML });
+                 function sortTextboxValues() {
+  // 배열 생성 및 초기화
+  var values = [];
+  for (var i = 1; i <= 10; i++) {
+    var textbox = document.getElementById('text' + i);
+    var label = document.getElementById('label' + i);
+    values.push({ value: textbox.value, label: label.innerHTML });
+  }
+
+  // 값에 따라 내림차순 정렬
+  values.sort(function(a, b) {
+    return b.value - a.value;
+  });
+
+  // 정렬된 값으로 텍스트박스 및 레이블 업데이트
+  for (var i = 1; i <= 10; i++) {
+    var textbox = document.getElementById('text' + i);
+    var label = document.getElementById('label' + i);
+    textbox.value = values[i - 1].value;
+    label.innerHTML = values[i - 1].label;
+
+    // 첫번째 라벨 텍스트의 색상을 빨강으로 변경
+    if (i == 1) {
+      label.style.color = 'red';
+      label.style.fontSize = '40px';
+    } else {
+      label.style.color = 'white';
     }
+  }
 
-    // 값에 따라 내림차순 정렬
-    values.sort(function(a, b) {
-      return b.value.localeCompare(a.value);
-    });
-
-    // 정렬된 값으로 텍스트박스 및 레이블 업데이트
-    for (var i = 1; i <= 10; i++) {
-      var textbox = document.getElementById('text' + i);
-      var label = document.getElementById('label' + i);
-      textbox.value = values[i - 1].value;
-      label.innerHTML = values[i - 1].label;
-
-      // 첫번째 라벨 텍스트의 색상을 빨강으로 변경
-      if (i == 1) {
-        label.style.color = 'red';
-        label.style.fontSize = '40px';
-      } else {
-        label.style.color = 'white';
-      }
-    }
+  console.log(values);
 }
 
               </script>
