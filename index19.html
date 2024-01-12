@@ -2,27 +2,38 @@
 <html>
     <head>
         <title>최종 순위 발표</title>
-        <div>
-            <img src="에이블 로고.png" alt="에이블">
-        </div>
-        <style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Gugi&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+      <img src="에이블 로고.png" alt="에이블">
+            <style>
             body {
-  background-image: url("2015.png"); /* 이미지 파일 경로 */
-  background-size: cover; /* 배경 이미지 크기 설정 */
-}
+                  background-color: rgb(53, 50, 50);
+                  margin: 0;
+                  padding: 0;
+                  font-family: 'Noto Sans KR', sans-serif;
+              }
         img {
-    float: left;
+    float: right;
+    width: 90px;
+                  height: 90px;
   }
   h1 {
-            color : white;
-            text-align: center;
-            font-size: 5em;
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* 테두리 스타일 */
-            padding: 10px; /* 글자와 테두리 간격 */
-          }
+                  font-family: 'Gugi', sans-serif;
+                  color: #62e9c5;
+                  text-align: center;
+                  font-size: 3em;
+                  text-shadow: 4px 3px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+                  padding: 10px;
+                  background-color: #cbb3b3;
+                  margin: 0;
+              }
+              
           .center {
+            font-family: 'Gaegu', sans-serif;
 		  margin: 0 auto;
 		  text-align: center;
+      
 		}
 
         input[type="text"] {
@@ -60,13 +71,10 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
+       <div class = "last">        
         <div style="display: flex; justify-content: center; text-align: center; margin-left: 170px;">
-        <button onclick="useValues()" style="  width: 1000px; height: 50px; margin-right: 20px; background-color: rgb(0, 0, 0); color: white; border: none; width: 150px; height: 50px; font-size : 20px;">결과 불러오기</button>
-        <button onclick="sortTextboxValues()"style="  width: 1000px; height: 50px; margin-right: 20px; background-color: rgb(0, 0, 0); color: white; border: none; width: 150px; height: 50px; font-size : 20px;">정렬하기</button>
+        <button onclick="useValues()" style=" font-family: 'Gaegu', sans-serif; width: 1000px; height: 50px; margin-right: 20px; background-color: rgb(0, 0, 0); color: white; border: none; width: 150px; height: 50px; font-size : 25px;">결과 불러오기</button>
+        <button onclick="sortTextboxValues()"style=" font-family: 'Gaegu', sans-serif; width: 1000px; height: 50px; margin-right: 20px; background-color: rgb(0, 0, 0); color: white; border: none; width: 150px; height: 50px; font-size : 25px;">정렬하기</button>
     </div>
         <br>
         <br>   
@@ -102,7 +110,7 @@
             <label for="text10"id="label10">법인명</label>
             <input type="text" id="text10" name="text10">
             </div>
-
+          </div>
           
 
             <script>
