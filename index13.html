@@ -4,24 +4,34 @@
 
    
         <title>2010 자본금 확인</title>
-        <div>
-            <img src="에이블 로고.png" alt="에이블">
-          </div>
-          <style>
-            body {
-      background-image: url("2010.png"); /* 이미지 파일 경로 */
-      background-size: cover; /* 배경 이미지 크기 설정 */
-    }
-            img {
-        float: left;
-      }
-      h1 {
-            color : white;
-            text-align: center;
-            font-size: 5em;
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* 테두리 스타일 */
-            padding: 10px; /* 글자와 테두리 간격 */
-          } 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Gugi&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+      <img src="에이블 로고.png" alt="에이블">
+            <style>
+              body {
+                  background-color: rgb(53, 50, 50);
+                  margin: 0;
+                  padding: 0;
+                  font-family: 'Noto Sans KR', sans-serif;
+              }
+      
+              img {
+                  float: right;
+                  width: 90px;
+                  height: 90px;
+              }
+      
+              h1 {
+                  font-family: 'Gugi', sans-serif;
+                  color: #62e9c5;
+                  text-align: center;
+                  font-size: 3em;
+                  text-shadow: 4px 3px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+                  padding: 10px;
+                  background-color: #cbb3b3;
+                  margin: 0;
+              }
 
       input[type="text"] {
     text-align: center;
@@ -38,6 +48,7 @@
             text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 		}
 		input[type="text"] {
+      font-family: 'Gaegu', sans-serif;
 			width: 120px; /* 텍스트박스의 가로 크기 */
 			height: 30px; /* 텍스트박스의 세로 크기 */
 			padding: 5px; /* 텍스트박스의 안쪽 여백 */
@@ -56,6 +67,7 @@
     
 
   .next-page-btn {
+    font-family: 'Gaegu', sans-serif;
   background-color: #000000; /* 배경색 */
   color: #ffffff; /* 글자색 */
   border: none; /* 테두리 없애기 */
@@ -82,8 +94,8 @@
         
         <h1>2010년</h1>
         
-        <button onclick="useValues()" style="background-color: rgb(0, 0, 0); color: white; border: none; width: 150px; height: 50px; font-size : 16px;">확인하기</button>
-        <button onclick="add()"style="background-color: rgb(0, 0, 0); color: white; border: none; width: 150px; height: 50px; font-size : 16px;">자본금 확인</button>
+        <button onclick="useValues()" style="font-family: 'Gaegu', sans-serif;background-color: rgb(0, 0, 0); color: white; border: none; width: 150px; height: 50px; font-size : 20px;">확인하기</button>
+        <button onclick="add()"style="font-family: 'Gaegu', sans-serif;background-color: rgb(0, 0, 0); color: white; border: none; width: 150px; height: 50px; font-size : 20px;">자본금 확인</button>
         
         <br>
         <br>
@@ -101,7 +113,7 @@
             <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
             <label for="textbox1m">법인명</label>
-            <input type="text" id="textbox1m" name="textbox1m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox1m" name="textbox1m" style="background-color: #cbb3b3; color: black;">
             <label for="sum11">자본금</label>
             <input type="text" id="sum11" name="sum11" readonly >
             <label for="idmount11">증감액</label>
@@ -143,7 +155,7 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
           <label for="textbox2m">법인명</label>
-            <input type="text" id="textbox2m" name="textbox2m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox2m" name="textbox2m" style="background-color: #cbb3b3; color: black;">
             <label for="sum22">자본금</label>
             <input type="text" id="sum22" name="sum22" readonly >
             <label for="idmount22">증감액</label>
@@ -180,7 +192,7 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
           <label for="textbox3m">법인명</label>
-            <input type="text" id="textbox3m" name="textbox3m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox3m" name="textbox3m" style="background-color: #cbb3b3; color: black;">
             <label for="sum33">자본금</label>
             <input type="text" id="sum33" name="sum33" readonly >
             <label for="idmount33">증감액</label>
@@ -218,7 +230,7 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
           <label for="textbox4m">법인명</label>
-            <input type="text" id="textbox4m" name="textbox4m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox4m" name="textbox4m" style="background-color: #cbb3b3; color: black;">
             <label for="sum44">자본금</label>
             <input type="text" id="sum44" name="sum44" readonly >
             <label for="idmount44">증감액</label>
@@ -256,7 +268,7 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
           <label for="textbox5m">법인명</label>
-            <input type="text" id="textbox5m" name="textbox5m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox5m" name="textbox5m" style="background-color: #cbb3b3; color: black;">
             <label for="sum55">자본금</label>
             <input type="text" id="sum55" name="sum55" readonly >
             <label for="idmount55">증감액</label>
@@ -294,7 +306,7 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
           <label for="textbox6m">법인명</label>
-            <input type="text" id="textbox6m" name="textbox6m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox6m" name="textbox6m" style="background-color: #cbb3b3; color: black;">
             <label for="sum66">자본금</label>
             <input type="text" id="sum66" name="sum66" readonly >
             <label for="idmount66">증감액</label>
@@ -331,7 +343,7 @@
         <br>
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
           <label for="textbox7m">법인명</label>
-          <input type="text" id="textbox7m" name="textbox7m" style="background-color: rgb(65, 75, 189); color: white;">
+          <input type="text" id="textbox7m" name="textbox7m" style="background-color: #cbb3b3; color: black;">
           <label for="sum77">자본금</label>
           <input type="text" id="sum77" name="sum77" readonly >
           <label for="idmount77">증감액</label>
@@ -369,7 +381,7 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
           <label for="textbox8m">법인명</label>
-            <input type="text" id="textbox8m" name="textbox8m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox8m" name="textbox8m" style="background-color: #cbb3b3; color: black;">
             <label for="sum88">자본금</label>
             <input type="text" id="sum88" name="sum88" readonly >
             <label for="idmount88">증감액</label>
@@ -407,7 +419,7 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
           <label for="textbox9m">법인명</label>
-            <input type="text" id="textbox9m" name="textbox9m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox9m" name="textbox9m" style="background-color: #cbb3b3; color: black;">
             <label for="sum99">자본금</label>
             <input type="text" id="sum99" name="sum99" readonly >
             <label for="idmount99">증감액</label>
@@ -445,7 +457,7 @@
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 10px;">
             
           <label for="textbox10m">법인명</label>
-            <input type="text" id="textbox10m" name="textbox10m" style="background-color: rgb(65, 75, 189); color: white;">
+            <input type="text" id="textbox10m" name="textbox10m" style="background-color: #cbb3b3; color: black;">
             <label for="sum1010">자본금</label>
             <input type="text" id="sum1010" name="sum1010" readonly >
             <label for="idmount1010">증감액</label>
